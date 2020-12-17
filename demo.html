@@ -1,0 +1,187 @@
+<!-- HTMLであることの宣言 -->
+<!DOCTYPE html>
+<!-- HTMLを日本語版に設定 -->
+<html lang="ja">
+<head>
+  <title>mai</title>
+  <!-- 文字化け防止 -->
+  <meta charset="UTF-8">
+  <!-- スタイルシートのリンク -->
+  <link rel ="stylesheet" href="demo.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/c1df82d5d5.js" crossorigin="anonymous"></script>
+  <!-- メディアクエリ -->
+  <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+</head>
+<body>
+  <!-- header -->
+  <header>
+<div class="header-logo"><a href="demo.html">mai</a></div>
+      <div class="header-list">
+        <ul>
+          <li><a href="section01.html">自己紹介</a></li>
+          <li><a href="section02.html">好きなもの</a></li>
+          <li><a href="section03.html">目標</a></li>
+        </ul>
+      </div> 
+​
+       <div class="header-link">
+         <i class="fab fa-twitter"></i>
+         <i class="fab fa-instagram"></i>
+       </div> 
+    </header>
+    <!-- main -->
+    <main>
+        <!-- pagetop -->
+        <div class="pagetop">
+          <script type="text/javascript">
+            $(function() {
+              var showFlag = false;
+              var topBtn = $('#page-top');    
+              topBtn.css('bottom', '-100px');
+              var showFlag = false;
+              //スクロールが100に達したらボタン表示
+              $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+              if (showFlag == false) {
+              showFlag = true;
+              topBtn.stop().animate({'bottom' : '20px'}, 200); 
+              }
+              } else {
+              if (showFlag) {
+              showFlag = false;
+              topBtn.stop().animate({'bottom' : '-100px'}, 200); 
+              }
+              }
+              });
+              //スクロールしてトップ
+              topBtn.click(function () {
+              $('body,html').animate({
+              scrollTop: 0
+              }, 500);
+              return false;
+             });
+              });
+          </script>
+          </div><!-- end:pagetop --> 
+          <p id="pageTop"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+          <!--  ↑ pagetop button-->
+​
+    
+
+
+       <img class="top-image" src="images\DSCF0696.JPG">
+        <div class="top-wrapper">
+          <div class="top-heading"> 
+            <h1>About<br>mai<br>Life</h1>
+          </div>
+          <div class="scroll">
+           <a href="#"><span></span>Scroll</a>
+          </div>
+        </div>
+      </div> <!-- end: main-contents -->
+​
+      <!--contents -->
+      <div class="contents-wrapper">
+      <div class ="contents">
+
+            <div class="contents-image"> 
+              <ul class="detail">
+                <li>
+                  <img src="images\DSCF0089.JPG">
+                  <dl>
+                    <dt>手始めに。</dt>
+                    <dd></dd>
+                    <dd><a href="section01.html" target="_blank" >自己紹介</a></dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contents-image"> 
+              <ul class="detail">
+                <li>
+                  <img src="images\DSCF0101.JPG">
+                  <dl>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd><a href="section01.html" target="_blank" ></a></dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+
+                <div class="contents-image">
+                  <ul class="detail"> 
+                    <li>
+                      <img src="images\DSCF0153.JPG">
+                      <dl>
+                        <dt>まいにち楽しく。</dt>
+                        <dd></dd>
+                        <dd><a href="section02.html" target="_blank" >好きなもの</a></dd>
+                      </dl>
+                    <li>
+                  </ul>
+               </div> 
+
+               <div class="contents-image">
+                <ul class="detail"> 
+                  <li>
+                    <img src="images\DSCF0587.JPG">
+                    <dl>
+                      <dt></dt>
+                      <dd></dd>
+                      <dd><a href="section02.html" target="_blank" ></a></dd>
+                    </dl>
+                  <li>
+                </ul>
+             </div>  
+
+             <div class="contents-image">
+              <ul class="detail"> 
+                <li>
+                  <img src="images\DSCF00912.jpg">
+                  <dl>
+                    <dt></dt>
+                    <dd></dd>
+                    <dd><a href="section02.html" target="_blank" ></a></dd>
+                  </dl>
+                <li>
+              </ul>
+           </div>  
+
+           
+            <div class="contents-image">
+              <ul class="detail"> 
+                <li>
+                  <img src="images\DSCF00982.jpg">
+                  <dl>
+                    <dt>密かな野望</dt>
+                    <dd></dd>
+                    <dd><a href="section03.html" target="_blank" >目標</a></dd>
+                  </dl>
+                <li>
+              </ul>
+           </div>  
+          </div>
+      </div> <!-- end: contents -->
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="header-logo"><a>mai</a></div>
+      <div class="footer-list"><a>
+        <ul>
+          <li>問合せ</li>
+          <li></li>
+        </ul></a>
+      </div> 
+      <div class="content-copy">
+        <small>&copy; mai All rights reserved.</small>
+      </div>
+    </footer>    
+  </body>
+</html>
